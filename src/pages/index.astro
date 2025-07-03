@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Greeting from '../components/Greeting';
 const pageTitle = "Home Page";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -8,4 +9,5 @@ const pageTitle = "Home Page";
 
 <BaseLayout pageTitle={pageTitle}>
 	<h2>私の素晴らしいブログのサブタイトル</h2>
+	<Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
 </BaseLayout>
